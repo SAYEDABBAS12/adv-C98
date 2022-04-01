@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfie Collage App</title>
+</head>
+<body class="bg bg-cover">
+    <nav class="bg-blue-500">
+        <!-- So you are thinking why i have given a empty li that's because when we use space-y because it leaves the first li. flex for horizontal and space-x for spacing justify end for getting ul left-->
+            <ul class="flex space-x-7 space-y-3 justify-end ">
+                <li class="px-2 text-white cursor-pointer hover:text-slate-700 font-medium font-sans"></li>
+                <li class="px-2 text-white cursor-pointer hover:text-slate-700 font-medium font-sans">Home</li>
+                <li class="px-2 text-white cursor-pointer hover:text-slate-700 font-medium font-sans">About</li>
+                <li class="px-2 text-white cursor-pointer hover:text-slate-700 font-medium font-sans">Contact</li>
+                <li class="px-2 text-white cursor-pointer hover:text-slate-700 font-medium font-sans">Services</li>
+            </ul>
+        </nav>
+        <div >
+        <center>
+    <div class="justify-center">
+        <h1 class="font-semibold text-3xl ">Collage Web App</h1>
+        <h1 class="font-medium text-lg py-6 text-red-500">As soon as Pop up Appears Click Allow!</h1>
+        <h1 class="font-semibold text-xl ">Say"Selfie" to take your selfie and make Collage </h1>
+        <button onclick="Start()" class="w-20 h-8 bg-blue-400 font-bold my-6 rounded-lg border-2 border-black text-gray-900" id="btn_start">Start</button>
+        <h1 class="font-semibold text-xl ">Press Start Button</h1>
+        
+        <hr>
+        
+        <div class="form-group">
+            <h3 class="font-bold">Say "take my selfie"</h3>
+            <label class="font-bold">Your voice output : </label>
+            <textarea  id="textbox" form="form-control" readonly="true" class="h-6 font-bold border-2 border-black"></textarea>
+
+        </div>
+
+        <p class="font-bold">Press the Start button</p>
+            <br>
+        <label class="font-bold">Your webcam : </label>
+     <div id="camera"></div>
+        <br>
+
+        <label class="font-bold">Your selife Will Display Here: </label>
+         <div id="result"></div>
+    </div>
+    </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
